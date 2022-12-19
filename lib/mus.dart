@@ -16,11 +16,11 @@ class _MyAppState extends State<MyApp> {
   int scale = 0;
   @override
   Widget build(BuildContext context) {
-    double value1 = 0;
+    double value1 =0;
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-          //
+        //
           body: Container(
         width: double.infinity,
         height: double.infinity,
@@ -40,10 +40,7 @@ class _MyAppState extends State<MyApp> {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Center(
-                            child: Image.asset(
-                              'images/w.png',
-                              scale: 2.1,
-                            ),
+                            child: Image.asset('images/w.png',scale: 2.1,),
                           ),
                           Padding(
                             padding: const EdgeInsets.only(top: 20),
@@ -75,16 +72,11 @@ class _MyAppState extends State<MyApp> {
                                       size: 50,
                                     )),
                                 Padding(
-                                    padding: const EdgeInsets.all(30),
-                                    child: TextButton(
-                                        onPressed: () {
-                                          setState(() {});
-                                        },
-                                        child: Icon(
-                                          Icons.play_circle_sharp,
-                                          size: 60,
-                                          color: Colors.black,
-                                        ))),
+                                  padding: const EdgeInsets.all(30),
+                                  child: TextButton(onPressed: (){setState(() {
+
+                                  });}, child: Icon(Icons.play_circle_sharp,size: 60,color: Colors.black,))
+                                ),
                                 TextButton(
                                     onPressed: () {
                                       scale++;
@@ -99,13 +91,13 @@ class _MyAppState extends State<MyApp> {
                             ),
                           ),
                           Slider(
-                            value: value1,
-                            onChanged: ((value) {
-                              setState(() {
-                                value1 = value;
-                              });
-                            }),
-                          ),
+                         value: value1,
+                         onChanged: ((value) {
+                           setState(() {
+                             value1=value;
+                           });
+                         }),
+                         ),
                           Row(
                             children: [
                               Text(
@@ -119,17 +111,14 @@ class _MyAppState extends State<MyApp> {
                     ],
                   ),
                 if (scale == 0)
-                  Column(
+                       Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Column(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Center(
-                            child: Image.asset(
-                              'images/i.png',
-                              scale: 1,
-                            ),
+                            child: Image.asset('images/i.png',scale:1,),
                           ),
                           Padding(
                             padding: const EdgeInsets.only(top: 20),
@@ -161,16 +150,11 @@ class _MyAppState extends State<MyApp> {
                                       size: 50,
                                     )),
                                 Padding(
-                                    padding: const EdgeInsets.all(30),
-                                    child: TextButton(
-                                        onPressed: () {
-                                          setState(() {});
-                                        },
-                                        child: Icon(
-                                          Icons.play_circle_sharp,
-                                          size: 60,
-                                          color: Colors.black,
-                                        ))),
+                                  padding: const EdgeInsets.all(30),
+                                  child: TextButton(onPressed: (){setState(() {
+
+                                  });}, child: Icon(Icons.play_circle_sharp,size: 60,color: Colors.black,))
+                                ),
                                 TextButton(
                                     onPressed: () {
                                       scale++;
@@ -185,13 +169,13 @@ class _MyAppState extends State<MyApp> {
                             ),
                           ),
                           Slider(
-                            value: value1,
-                            onChanged: ((value) {
-                              setState(() {
-                                value1 = value;
-                              });
-                            }),
-                          ),
+                         value: value1,
+                         onChanged: ((value) {
+                           setState(() {
+                             value1=value;
+                           });
+                         }),
+                         ),
                           Row(
                             children: [
                               Text(
@@ -203,19 +187,15 @@ class _MyAppState extends State<MyApp> {
                         ],
                       ),
                     ],
-                  ),
-                if (scale == -1)
-                  Column(
+                  ),  if (scale == -1)
+                       Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Column(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Center(
-                            child: Image.asset(
-                              'images/elyor.png',
-                              scale: 2.8,
-                            ),
+                            child: Image.asset('images/elyor.png',scale:2.8,),
                           ),
                           Padding(
                             padding: const EdgeInsets.only(top: 20),
@@ -247,16 +227,11 @@ class _MyAppState extends State<MyApp> {
                                       size: 50,
                                     )),
                                 Padding(
-                                    padding: const EdgeInsets.all(30),
-                                    child: TextButton(
-                                        onPressed: () {
-                                          setState(() {});
-                                        },
-                                        child: Icon(
-                                          Icons.play_circle_sharp,
-                                          size: 60,
-                                          color: Colors.black,
-                                        ))),
+                                  padding: const EdgeInsets.all(30),
+                                  child: TextButton(onPressed: (){setState(() {
+
+                                  });}, child: Icon(Icons.play_circle_sharp,size: 60,color: Colors.black,))
+                                ),
                                 TextButton(
                                     onPressed: () {
                                       scale++;
@@ -271,13 +246,13 @@ class _MyAppState extends State<MyApp> {
                             ),
                           ),
                           Slider(
-                            value: value1,
-                            onChanged: ((value) {
-                              setState(() {
-                                value1 = value;
-                              });
-                            }),
-                          ),
+                         value: value1,
+                         onChanged: ((value) {
+                           setState(() {
+                             value1=value;
+                           });
+                         }),
+                         ),
                           Row(
                             children: [
                               Text(
@@ -289,19 +264,15 @@ class _MyAppState extends State<MyApp> {
                         ],
                       ),
                     ],
-                  ),
-                if (scale == 2)
-                  Column(
+                  ),if (scale == 2)
+                       Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Column(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Center(
-                            child: Image.asset(
-                              'images/ozod.png',
-                              scale: 1,
-                            ),
+                            child: Image.asset('images/ozod.png',scale:1,),
                           ),
                           Padding(
                             padding: const EdgeInsets.only(top: 20),
@@ -333,19 +304,14 @@ class _MyAppState extends State<MyApp> {
                                       size: 50,
                                     )),
                                 Padding(
-                                    padding: const EdgeInsets.all(30),
-                                    child: TextButton(
-                                        onPressed: () {
-                                          setState(() {});
-                                        },
-                                        child: Icon(
-                                          Icons.play_circle_sharp,
-                                          size: 60,
-                                          color: Colors.black,
-                                        ))),
+                                  padding: const EdgeInsets.all(30),
+                                  child: TextButton(onPressed: (){setState(() {
+
+                                  });}, child: Icon(Icons.play_circle_sharp,size: 60,color: Colors.black,))
+                                ),
                                 TextButton(
                                     onPressed: () {
-                                      if (scale != 2) scale++;
+                                      scale++;
                                       setState(() {});
                                     },
                                     child: Icon(
@@ -357,13 +323,13 @@ class _MyAppState extends State<MyApp> {
                             ),
                           ),
                           Slider(
-                            value: value1,
-                            onChanged: ((value) {
-                              setState(() {
-                                value1 = value;
-                              });
-                            }),
-                          ),
+                         value: value1,
+                         onChanged: ((value) {
+                           setState(() {
+                             value1=value;
+                           });
+                         }),
+                         ),
                           Row(
                             children: [
                               Text(
@@ -375,19 +341,15 @@ class _MyAppState extends State<MyApp> {
                         ],
                       ),
                     ],
-                  ),
-                if (scale == -2)
-                  Column(
+                  ),if (scale == -2)
+                       Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Column(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Center(
-                            child: Image.asset(
-                              'images/bunyod.png',
-                              scale: 1,
-                            ),
+                            child: Image.asset('images/bunyod.png',scale:1,),
                           ),
                           Padding(
                             padding: const EdgeInsets.only(top: 20),
@@ -410,7 +372,7 @@ class _MyAppState extends State<MyApp> {
                               children: [
                                 TextButton(
                                     onPressed: () {
-                                      if (scale != -2) scale--;
+                                      scale--;
                                       setState(() {});
                                     },
                                     child: Icon(
@@ -419,16 +381,13 @@ class _MyAppState extends State<MyApp> {
                                       size: 50,
                                     )),
                                 Padding(
-                                    padding: const EdgeInsets.all(30),
-                                    child: TextButton(
-                                        onPressed: () {
-                                          setState(() {});
-                                        },
-                                        child: Icon(
-                                          Icons.play_circle_sharp,
-                                          size: 60,
-                                          color: Colors.black,
-                                        ))),
+                                  padding: const EdgeInsets.all(30),
+                                  child: TextButton(onPressed: (){
+                                    
+                                    setState(() {
+
+                                  });}, child: Icon(Icons.play_circle_sharp,size: 60,color: Colors.black,))
+                                ),
                                 TextButton(
                                     onPressed: () {
                                       scale++;
@@ -443,13 +402,13 @@ class _MyAppState extends State<MyApp> {
                             ),
                           ),
                           Slider(
-                            value: value1,
-                            onChanged: ((value) {
-                              setState(() {
-                                value1 = value;
-                              });
-                            }),
-                          ),
+                         value: value1,
+                         onChanged: ((value) {
+                           setState(() {
+                             value1=value;
+                           });
+                         }),
+                         ),
                           Row(
                             children: [
                               Text(
@@ -472,7 +431,7 @@ class _MyAppState extends State<MyApp> {
                         children: [
                           TextButton(
                               onPressed: () {
-                                if (scale != -2) scale--;
+                                scale--;
                                 setState(() {});
                               },
                               child: Icon(
@@ -482,8 +441,9 @@ class _MyAppState extends State<MyApp> {
                               )),
                           TextButton(
                               onPressed: () {
-                                if (scale != 2) scale++;
-                                setState(() {});
+                                scale++;
+                                setState(() {
+                                });
                               },
                               child: Icon(
                                 Icons.skip_next,
